@@ -15,7 +15,7 @@ compinit
 # User created settings
 autoload -Uz promptinit
 promptinit
-prompt adam2
+#prompt adam2
 
 alias sshj='ssh jackyw@babbage8.computing.clemson.edu'
 alias la='ls -a'
@@ -31,3 +31,10 @@ cat ~/.cache/wal/sequences
 
 # To add support for TTYs this line can be optionally added.
 source ~/.cache/wal/colors-tty.sh
+
+# Powerline
+powerline-daemon -q
+. /usr/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
+# Wal
+(cat ~/.cache/wal/sequences &)

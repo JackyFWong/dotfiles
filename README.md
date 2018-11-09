@@ -20,6 +20,14 @@ reason to switch.
 I use i3gaps because of aesthetics.
 
 I rebound the movement keys to Vim's hjkl instead of the default jkl;.
+
+I used [Alex's guide](http://flux242.blogspot.com/2015/10/using-i3-tiling-window-manager-with.html)
+to ensure that I could use i3 and Xfce services together somewhat smoothly. 
+
+There was a bug with the xfce4-panel and using the Windows button as `$mod'. I figured it out
+[here](https://forum.antergos.com/topic/10809/no-running-instance-of-xfce4-panel-was-found/3).
+
+I Googled the rest.
 ### Installation
 ```
 pacman -S i3-gaps
@@ -120,7 +128,7 @@ Set to lock screen with i3 keyboard shortcut in its config
 ```
 bindsym $mod+Shift+x exec betterlockscreen -l dimblur
 ```
-The `-l dimblur` argument asks betterlockscreen to dim and blur the lock screen image.
+The optional `dimblur` argument asks betterlockscreen to dim and blur the lock screen image.
 
 ## Chromium
 ### Notes
@@ -166,6 +174,6 @@ an application's configuration files. For example, `stow i3`.
 I use mostly [Wallhaven](https://alpha.wallhaven.cc/) for my wallpapers.
 
 # Other
-Currently v2 of my ricing. My first had KDE Plasma and i3 as the WM.
+Currently v2 of my rice. My first had KDE Plasma and i3 as the WM.
 
 Don't forget to `pacman -Syu'!

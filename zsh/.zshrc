@@ -38,3 +38,7 @@ powerline-daemon -q
 
 # Wal
 (cat ~/.cache/wal/sequences &)
+
+# Setting default text editor
+export VISUAL=vim
+export EDITOR="$VISUAL"

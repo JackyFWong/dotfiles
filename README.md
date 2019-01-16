@@ -176,4 +176,21 @@ I use mostly [Wallhaven](https://alpha.wallhaven.cc/) for my wallpapers.
 # Other
 Currently v2 of my rice. My first had KDE Plasma and i3 as the WM.
 
-Don't forget to `pacman -Syu`!
+# List of installed packages for reference
+- xfce
+- chromium
+- i3gaps
+- termite, rofi
+- noto-fonts, ttf-dejavu, adobe-source-code-pro-fonts
+- zsh
+- polybar
+- ttf-font-awesome
+- compton
+- pywal
+- betterlockscreen
+- cmatrix
+- htop
+- ttf-ms-fonts
+- yay (replacing pacaur)
+
+Don't forget to `pacman -Syu` and `yay`!

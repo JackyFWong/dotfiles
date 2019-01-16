@@ -27,6 +27,9 @@ to ensure that I could use i3 and Xfce services together somewhat smoothly.
 There was a bug with the xfce4-panel and using the Windows button as `$mod`. I figured it out
 [here](https://forum.antergos.com/topic/10809/no-running-instance-of-xfce4-panel-was-found/3).
 
+To set the PrtSc button on your keyboard, head to the `xfce4-settings-manager` > Keyboard > 
+Application Shortcuts and add `xfce4-screenshooter` as a command.
+
 I Googled the rest.
 ### Installation
 ```
@@ -47,7 +50,7 @@ I saw on r/unixporn that a lot of people used polybar, so I decided to try it ou
 polybar is a fast and easy to use status bar, as well as very customizable.
 ### Installation
 ```
-pacaur -S polybar
+yay -S polybar
 ```
 
 ## termite
@@ -117,7 +120,7 @@ In my opinion, it looks much better than i3lock's default settings and I don't r
 customize the lock screen that much so I took somebody else's.
 ### Installation
 ```
-pacaur -S betterlockscreen
+yay -S betterlockscreen
 ```
 ### Configuration
 Set an image as the lock screen
@@ -151,8 +154,19 @@ Activate with i3 in its config
 exec_always --no-startup-id compton -f -cC
 ```
 
+## Powerline
+### Notes
+To be completed.
+### Installation
+```
+pacman -S powerline
+pacman -S powerline-fonts
+```
+
+To be completed.
+
 ## Fonts used
-I have noto-fonts, ttf-dejavu, adobe-source-code-pro-fonts, and ttf-font-awesome installed.
+I have noto-fonts, ttf-dejavu, adobe-source-code-pro-fonts, ttf-ms-fonts, and ttf-font-awesome installed.
 Roboto is my main system font, Source Code Pro is my main monospace font.
 
 
@@ -167,7 +181,7 @@ pacman -S stow
 ```
 Follow Invergo's guide for more detail.
 ### Configuration
-Go to your main dotfiles directory. Execute `stow ` followed by the folder name that contains
+Go to your main dotfiles directory. Execute `stow` followed by the folder name that contains
 an application's configuration files. For example, `stow i3`.
 
 # Wallpapers

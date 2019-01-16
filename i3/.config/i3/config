@@ -174,7 +174,6 @@ bindsym XF86AudioNext exec mocp --next
 bindsym XF86AudioPrev exec mocp --previous
 
 # Autostart apps
-#exec --no-startup-id "compton -cC"
 exec --no-startup-id nm-applet
 exec --no-startup-id "sleep 5s && kalu"
 

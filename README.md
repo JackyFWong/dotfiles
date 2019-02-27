@@ -2,7 +2,8 @@
 dotfiles for personal use. dotfiles are custom user configuration files.
 They usually start with a period, hence the name. I've included reasoning as to why I use what.
 
-I use i3 on Antergos with Xfce4 programs as needed. Running on a Thinkpad X1 Carbon (gen. 5).
+I use i3 on Antergos with Xfce4 services because I'm too lazy to install stuff individually. 
+Running on a Thinkpad X1 Carbon (gen. 5).
 
 Always improving for better looks and productivity. Always learning.
 
@@ -17,9 +18,9 @@ i3 was introduced to me by my friend who recommended it because of the large use
 ease of customization, and productivity. It's the first one I tried and I haven't had a 
 reason to switch.
 
-I use i3gaps because of aesthetics.
+I use the branch i3gaps because of aesthetics.
 
-I rebound the movement keys to Vim's hjkl instead of the default jkl;.
+I rebound the movement keys to vim's `hjkl` instead of the default `jkl;`.
 
 I used [Alex's guide](http://flux242.blogspot.com/2015/10/using-i3-tiling-window-manager-with.html)
 to ensure that I could use i3 and Xfce services together somewhat smoothly. 
@@ -29,8 +30,6 @@ There was a bug with the xfce4-panel and using the Windows button as `$mod`. I f
 
 To set the PrtSc button on your keyboard, head to the `xfce4-settings-manager` > Keyboard > 
 Application Shortcuts and add `xfce4-screenshooter` as a command.
-
-I Googled the rest.
 ### Installation
 ```
 pacman -S i3-gaps
@@ -66,7 +65,7 @@ pacman -S termite
 
 ## vim
 ### Notes
-It's Vim.
+It's Vim. Which is not on a default Arch/Antergos installation.
 ### Installation
 ```
 pacman -S vim
@@ -75,12 +74,12 @@ pacman -S vim
 ## zsh
 ### Notes
 Much like termite, I haven't learned most of zsh. 
-For now, it is bash with tab completion and pretty prompts.
+For now, it is bash with tab completion and pretty default prompts.
 ### Installation
 ```
 pacman -S zsh
 ```
-Use `zsh` to run zsh-newuser-install.
+Use `zsh` to run `zsh-newuser-install`.
 #### Replace bash with zsh
 Move the code you want to save (e.g. aliases and prompt) to ~/.zshrc.
 
@@ -89,29 +88,56 @@ Assuming zsh is installed correctly,
 chsh -s /bin/zsh
 ```
 
-# Other Programs
-## pywal
+## Powerline
 ### Notes
-I change my background image a lot and I don't have good color sense, so I use pywal to solve this.
-pywal can change the color scheme of your entire system with one terminal line based on a
-specified background. It's really great.
+I use powerline for the shell prompt and to make vim look better.
 ### Installation
 ```
-pacman -S python-pywal
+pacman -S powerline
+pacman -S powerline-fonts
 ```
-Also, select wal under xfce4-appearance-settings > style.
+Currently mostly default settings. Check the Arch Wiki.
+
+## Rofi
+### Notes
+rofi is a good alternative to the i3's default dmenu. Provides more customization options.
+### Installation
+```
+pacman -S rofi
+```
+
+
+# Other Programs
+## wpgtk
+### Notes
+Changed from `pywal` because pywal no longer supports oomox.
+
+I change my background image a lot and I don't have good color sense, 
+so I use `wpgtk` to solve this.
+wpgtk can change the color scheme of your entire system with one terminal line based on a
+specified background. It's really great. Seriously, it's good. Templates too.
+### Installation
+```
+yay -S wpgtk-git
+```
+To create new default templates
+```
+wpg-install.sh
+```
+Use option `-h` for help.
+
+Also, select FlatColor under xfce4-appearance-settings > style.
 ### Configuration
-Specifying a new wallpaper (and thus theme)
+Use the GUI, it's really nice and easy.
 ```
-wal -i /path/to/wallpaper.jpg -g
+wpg
 ```
-The `-g` argument creates an oomox theme, so I can set Chromium's (and other applications') theme as well.
 
 Reload in i3 in its config
 ```
 exec_always --no-startup-id wal -R
 ```
-Use xfce4-appearance-settings to reload Chromium's theme. Click off of wal and reselect wal.
+Use xfce4-appearance-settings to reload Chromium's theme. Click off of FlatColor and reselect FlatColor.
 
 ## betterlockscreen
 ### Notes
@@ -154,17 +180,6 @@ Activate with i3 in its config
 exec_always --no-startup-id compton -f -cC
 ```
 
-## Powerline
-### Notes
-To be completed.
-### Installation
-```
-pacman -S powerline
-pacman -S powerline-fonts
-```
-
-To be completed.
-
 ## Fonts used
 I have noto-fonts, ttf-dejavu, adobe-source-code-pro-fonts, ttf-ms-fonts, and ttf-font-awesome installed.
 Roboto is my main system font, Source Code Pro is my main monospace font.
@@ -185,16 +200,17 @@ Go to your main dotfiles directory. Execute `stow` followed by the folder name t
 an application's configuration files. For example, `stow i3`.
 
 # Wallpapers
-I use mostly [Wallhaven](https://alpha.wallhaven.cc/) for my wallpapers.
+I use [Wallhaven](https://alpha.wallhaven.cc/) for my non-anime wallpapers.
 
 # Other
-Currently v2 of my rice. My first had KDE Plasma and i3 as the WM.
+Currently v2 of my rice. My first used KDE Plasma and i3 as the WM.
 
 # List of installed packages for reference
 - xfce
 - chromium
 - i3gaps
-- termite, rofi
+- termite
+- rofi
 - noto-fonts, ttf-dejavu, adobe-source-code-pro-fonts
 - zsh
 - polybar
@@ -206,5 +222,6 @@ Currently v2 of my rice. My first had KDE Plasma and i3 as the WM.
 - htop
 - ttf-ms-fonts
 - yay (replacing pacaur)
+- aether (lightdm theme)
 
 Don't forget to `pacman -Syu` and `yay`!

@@ -1,5 +1,6 @@
 set number
 set wrap
+filetype plugin on
 syntax on
 
 let g:powerline_pycmd="py3"

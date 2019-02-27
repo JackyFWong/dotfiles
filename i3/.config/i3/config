@@ -183,11 +183,11 @@ for_window [class="^.*"] border pixel 0
 
 exec --no-startup-id xfsettingsd --sm-client-disable &
 exec xfce4-volumed
-exec xfce4-power-manager
-
+exec xfce4-power-manager 
 gaps inner 10
 gaps outer 1
 
+exec --no-startup-id $HOME/.config/wpg/wp_init.sh
 exec_always --no-startup-id $HOME/.config/polybar/polybar.sh &
-exec_always --no-startup-id compton -f -cC
-exec_always --no-startup-id wal -R
+exec_always --no-startup-id compton -f -cC --blur-background
+# exec_always --no-startup-id wal -R

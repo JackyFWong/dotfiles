@@ -1,24 +1,38 @@
 ;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
 ;   To learn more about how to configure Polybar
 ;   go to https://github.com/jaagr/polybar
+;
 ;   The README contains alot of information
+;
 ;==========================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
-;background-alt = ${xrdb:color0:#222}
+;background = ${<COLOR0>}
+;background = #222
+;background-alt = #444
 ;foreground = ${xrdb:color7:#222}
-;foreground-alt = ${xrdb:color7:#222}
-;primary = ${xrdb:color1:#222}
-;secondary = ${xrdb:color2:#222}
-;alert = ${xrdb:color3:#222}
-background = #09152D
-background-alt = #09152D
-foreground = #efe8ca
-foreground-alt = #efe8ca
-primary = #7586A2
-secondary = #586395
-alert = #E7CD6D
+;foreground = #dfdfdf
+;foreground-alt = #555
+;primary = #ffb52a
+;secondary = #e60053
+;alert = #bd2c40
+background = ${xrdb:color0:#222}
+background-alt = ${xrdb:color0:#222}
+foreground = ${xrdb:color7:#222}
+foreground-alt = ${xrdb:color7:#222}
+primary = ${xrdb:color1:#222}
+secondary = ${xrdb:color2:#222}
+alert = ${xrdb:color3:#222}
 
 [module/xwindow]
 type = internal/xwindow

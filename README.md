@@ -8,7 +8,9 @@ Running on a Thinkpad X1 Carbon (gen. 5).
 Always improving for better looks and productivity. Always learning.
 
 # Previews
-To be created.
+## Under construction
+Display Manager - `lightdm` with [`aether`](https://github.com/NoiSek/AetherA) theme
+![lightdm-aether](images/greeter.png)
 
 # Current dots
 

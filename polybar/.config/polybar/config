@@ -5,13 +5,6 @@
 ;==========================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
-;background-alt = ${xrdb:color0:#222}
-;foreground = ${xrdb:color7:#222}
-;foreground-alt = ${xrdb:color7:#222}
-;primary = ${xrdb:color1:#222}
-;secondary = ${xrdb:color2:#222}
-;alert = ${xrdb:color3:#222}
 background = #09152D
 background-alt = #09152D
 foreground = #efe8ca
@@ -39,12 +32,15 @@ label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
 label-focused = %index%
-label-focused-background = ${colors.background-alt}
+label-focused-background = ${colors.foreground-alt}
+label-focused-foreground = ${colors.background-alt}
 label-focused-underline = ${colors.primary}
 label-focused-padding = 2
 
 label-unfocused = %index%
 label-unfocused-padding = 2
+label-unfocused-background = ${colors.foreground-alt}
+label-unfocused-foreground = ${colors.background-alt}
 
 ; visible = Active workspace on unfocused monitor
 label-visible = %index%
@@ -63,18 +59,24 @@ label-urgent-padding = 2
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
+format-prefix = "   "
+format-prefix-foreground = ${colors.background-alt}
+format-prefix-background = ${colors.foreground-alt}
 format-underline = #f90000
-label = %percentage:2%%
+label = " %percentage:2%%  "
+label-background = ${colors.foreground}
+label-foreground = ${colors.background}
 
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
+format-prefix = "   "
+format-prefix-foreground = ${colors.background-alt}
+format-prefix-background = ${colors.foreground-alt}
 format-underline = #4bffdc
-label = %percentage_used%%
+label = "%percentage_used%%  "
+label-background = ${colors.foreground}
+label-foreground = ${colors.background}
 
 [module/wlan]
 type = internal/network
@@ -82,8 +84,11 @@ interface = wlp4s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
+format-connected-background = ${colors.foreground}
 format-connected-underline = #9f78e1
-label-connected = %essid%
+label-connected = " %essid%  "
+label-connected-background = ${colors.foreground}
+label-connected-foreground = ${colors.background}
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -91,12 +96,13 @@ format-disconnected =
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
-ramp-signal-foreground = ${colors.foreground-alt}
+ramp-signal-0 = "  "
+ramp-signal-1 = "  "
+ramp-signal-2 = "  "
+ramp-signal-3 = "  "
+ramp-signal-4 = "  "
+ramp-signal-foreground = ${colors.background-alt}
+ramp-signal-background = ${colors.foreground-alt}
 
 [module/eth]
 type = internal/network
@@ -119,28 +125,33 @@ type = internal/date
 interval = 1
 
 date =
-date-alt = " %m-%d-%Y"
+date-alt = "%m-%d-%Y "
 
-time = %I:%M %p
-time-alt = %H:%M:%S
+time = "%I:%M %p"
+time-alt = "%H:%M:%S"
 
-format-prefix = 
-format-prefix-foreground = ${colors.foreground-alt}
+format-prefix = "  "
+format-prefix-foreground = ${colors.background-alt}
+format-prefix-background = ${colors.foreground-alt}
 format-underline = #0a6cf5
 
-label = %date% %time%
+label = "  %date% %time%  "
+label-background = ${colors.foreground}
+label-foreground = ${colors.background}
 
 [module/pulseaudio]
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
-label-volume-foreground = ${root.foreground}
+label-volume = "  VOL %percentage%%  "
+label-volume-foreground = ${root.background}
+label-volume-background = ${root.foreground}
 
-label-muted = 🔇 muted
+label-muted = "  🔇 muted  "
 label-muted-foreground = #666
+label-muted-background = ${colors.foreground}
 
-bar-volume-width = 10
+bar-volume-width = 5
 bar-volume-foreground-0 = #55aa55
 bar-volume-foreground-1 = #55aa55
 bar-volume-foreground-2 = #55aa55
@@ -148,6 +159,13 @@ bar-volume-foreground-3 = #55aa55
 bar-volume-foreground-4 = #55aa55
 bar-volume-foreground-5 = #f5a70a
 bar-volume-foreground-6 = #ff5555
+bar-volume-background-0 = ${colors.background}
+bar-volume-background-1 = ${colors.background}
+bar-volume-background-2 = ${colors.background}
+bar-volume-background-3 = ${colors.background}
+bar-volume-background-4 = ${colors.background}
+bar-volume-background-5 = ${colors.background}
+bar-volume-background-6 = ${colors.background}
 bar-volume-gradient = false
 bar-volume-indicator = |
 bar-volume-indicator-font = 2
@@ -155,7 +173,8 @@ bar-volume-fill = ─
 bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground-alt}
+bar-volume-empty-foreground = ${colors.background-alt}
+bar-volume-empty-background = ${colors.foreground-alt}
 
 [module/battery]
 type = internal/battery
@@ -165,12 +184,17 @@ full-at = 98
 
 format-charging = <animation-charging> <label-charging>
 format-charging-underline = #ffb52a
+format-charging-foreground = ${colors.background}
+format-charging-background = ${colors.foreground}
 
-format-discharging = <animation-discharging> <label-discharging>
+format-discharging = "    <label-discharging>  "
 format-discharging-underline = ${self.format-charging-underline}
+format-discharging-foreground = ${colors.background}
+format-discharging-background = ${colors.foreground}
 
-format-full-prefix = " "
-format-full-prefix-foreground = ${colors.foreground-alt}
+format-full-prefix = " 100%"
+format-full-prefix-foreground = ${colors.background-alt}
+format-full-prefix-background = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
 
 ramp-capacity-0 = 
@@ -184,11 +208,11 @@ animation-charging-2 = 
 animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
 
-animation-discharging-0 = 
-animation-discharging-1 = 
-animation-discharging-2 = 
-animation-discharging-foreground = ${colors.foreground-alt}
-animation-discharging-framerate = 750
+;animation-discharging-0 = 
+;animation-discharging-1 = 
+;animation-discharging-2 = 
+;animation-discharging-foreground = ${colors.foreground-alt}
+;animation-discharging-framerate = 750
 
 [module/temperature]
 type = internal/temperature
@@ -196,18 +220,20 @@ thermal-zone = 0
 warn-temperature = 60
 
 format = <ramp> <label>
+label-foreground = ${colors.background}
+format-background = ${colors.foreground}
 format-underline = #f50a4d
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
 
-label = %temperature-c%
-label-warn = %temperature-c%
+label = " %temperature-c%  "
+label-warn = " %temperature-c%  "
 label-warn-foreground = ${colors.secondary}
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-foreground = ${colors.foreground-alt}
+ramp-0 = "  "
+ramp-1 = "  "
+ramp-2 = "  "
+ramp-foreground = ${colors.background-alt}
 
 [module/powermenu]
 type = custom/menu
@@ -215,30 +241,69 @@ type = custom/menu
 expand-right = true
 
 format-spacing = 1
+format-background = ${colors.background}
 
-label-open = 
+label-open-font = "Wuncon Siji:pixelsize=20;1"
+label-open = "    "
 label-open-foreground = ${colors.secondary}
-label-close =  cancel
+label-open-background = ${colors.foreground}
+label-close = "   cancel  "
 label-close-foreground = ${colors.secondary}
+label-close-background = ${colors.foreground}
 label-separator = |
-label-separator-foreground = ${colors.foreground-alt}
+label-separator-foreground = ${colors.background-alt}
+label-separator-background = ${colors.foreground-alt}
 
-menu-0-0 = reboot
+menu-0-0 = " reboot "
 menu-0-0-exec = menu-open-1
-menu-0-1 = power off
+menu-0-0-background = ${colors.foreground}
+menu-0-0-foreground = ${colors.background}
+menu-0-1 = " power off  "
 menu-0-1-exec = menu-open-2
+menu-0-1-background = ${colors.foreground}
+menu-0-1-foreground = ${colors.background}
 
-menu-1-0 = cancel
+menu-1-0 = " cancel "
 menu-1-0-exec = menu-open-0
-menu-1-1 = reboot
+menu-1-0-background = ${colors.foreground}
+menu-1-0-foreground = ${colors.background}
+menu-1-1 = " reboot  "
 menu-1-1-exec = systemctl reboot
+menu-1-1-background = ${colors.foreground}
+menu-1-1-foreground = ${colors.background}
 
-menu-2-0 = power off
+menu-2-0 = " power off "
 menu-2-0-exec = systemctl poweroff
-menu-2-1 = cancel
+menu-2-0-background = ${colors.foreground}
+menu-2-0-foreground = ${colors.background}
+menu-2-1 = " cancel  "
 menu-2-1-exec = menu-open-0
+menu-2-1-background = ${colors.foreground}
+menu-2-1-foreground = ${colors.background}
 
-label-background: ${colors.background}
+label-background: ${colors.foreground}
+label-foreground: ${colors.background}
+
+[module/decor-glyph]
+type = custom/text
+content-background = #d909152D
+content-foreground = ${colors.foreground}
+
+[module/left-start]
+inherit = module/decor-glyph
+content = ◢
+
+[module/left-end]
+inherit = module/decor-glyph
+content = ◤
+
+[module/right-start]
+inherit = module/decor-glyph
+content = ◥
+
+[module/right-end]
+inherit = module/decor-glyph
+content = ◣
 
 [settings]
 screenchange-reload = true
@@ -263,8 +328,7 @@ offset-y = 0
 override-redirect = true
 wm-restack = i3
 
-;background = #00000000
-background = ${colors.background}
+background = #d909152D
 foreground = ${colors.foreground}
 
 line-size = 3
@@ -276,21 +340,23 @@ border-top-size = 10
 border-bottom-size = 0
 border-color = #00000000
 
-padding-left = 2
-padding-right = 2
+;padding-left = 2
+;padding-right = 2
 
-module-margin-left = 2
-module-margin-right = 2
+;module-margin-left = 2
+;module-margin-right = 2
 
 font-0 = fixed:pixelsize=10;1
 font-1 = unicode:fontformat=truetype:size=8:antialias=false;0
-font-2 = "Wuncon siji:pixelsize=10;1"
+font-2 = "Wuncon Siji:pixelsize=10;1"
+font-3 = "DejaVu Sans:pixelsize=25;3"
+font-4 = "Noto Sans Symbols2:pixelsize=10;1"
 
-modules-left = i3
+modules-left = i3 left-end
 modules-center = xwindow
-modules-right = pulseaudio cpu memory temperature date powermenu
+modules-right = right-start pulseaudio right-end right-start cpu memory temperature right-end right-start wlan eth battery date powermenu
 
-tray-position = right
-tray-padding = 2
+;tray-position = right
+;tray-padding = 2
 
 cursor-click = pointer

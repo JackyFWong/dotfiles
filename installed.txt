@@ -1,3 +1,4 @@
+List of installed packages for reference:
 xfce
 chromium
 i3gaps

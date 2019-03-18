@@ -49,28 +49,28 @@ scrollback_lines = 10000
 #background = #3f3f3f
 
 # 20% background transparency (requires a compositor)
-background = rgba(9,21,45, 0.85)
+background = rgba({color0.rgb}, 0.85)
 
 # If unset, will reverse foreground and background
 #highlight = #2f2f2f
 
 # Colors from color0 to color254 can be set
-color0 = #09152D
-color1 = #7586A2
-color2 = #586395
-color3 = #E7CD6D
-color4 = #2E59A7
-color5 = #A4A095
-color6 = #3A65B3
-color7 = #efe8ca
-color8 = #102857
-color9 = #86a9e4
-color10 = #6376d1
-color11 = #ffff77
-color12 = #2d6fe7
-color13 = #e9d9ad
-color14 = #3b7ef8
-color15 = #ffffe9
+color0 = {color0}
+color1 = {color1}
+color2 = {color2}
+color3 = {color3}
+color4 = {color4}
+color5 = {color5}
+color6 = {color6}
+color7 = {color7}
+color8 = {color8}
+color9 = {color9}
+color10 = {color10}
+color11 = {color11}
+color12 = {color12}
+color13 = {color13}
+color14 = {color14}
+color15 = {color15}
 
 [hints]
 #font = Monospace 12
@@ -79,7 +79,7 @@ color15 = #ffffe9
 #active_foreground = #e68080
 #active_background = #3f3f3f
 #padding = 2
-border = rgba(9,21,45, 0.85)
+border = rgba({color0.rgb}, 0.85)
 #border_width = 0.5
 #roundness = 2.0
 

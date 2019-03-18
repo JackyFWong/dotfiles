@@ -4,16 +4,43 @@ They usually start with a period, hence the name. I've included reasoning as to 
 
 I use i3 on Antergos with Xfce4 services because I'm too lazy to install stuff individually. 
 Running on a Thinkpad X1 Carbon (gen. 5).
-
-Always improving for better looks and productivity. Always learning.
-
+---
 # Previews
-## Under construction
-Display Manager - `lightdm` with [`aether`](https://github.com/NoiSek/AetherA) theme
-![lightdm-aether](images/greeter.png)
+Display Manager - `lightdm` with [`aether`](https://github.com/NoiSek/Aether) theme
+<img align="middle" src="images/greeter.png" height="720px"/>
 
+[Lock screen](https://github.com/JackyFWong/dotfiles#betterlockscreen) - betterlockscreen
+<img align="middle" src="images/lock.png" height="720px"/>
+
+[neofetch](https://github.com/JackyFWong/dotfiles#neofetch)
+<img align="middle" src="images/neofetch.png" height="720px"/>
+
+[rofi](https://github.com/JackyFWong/dotfiles#rofi)
+<img align="middle" src="images/rofi.png" height="720px"/>
+
+r/unixporn and [i3](https://github.com/JackyFWong/dotfiles#i3gaps) config
+<img align="middle" src="images/unixporn.png" height="720px"/>
+
+[wpgtk](https://github.com/JackyFWong/dotfiles#wpgtk) (colors submenu)
+<img align="middle" src="images/wpgtk.png" height="720px"/>
+
+YouTube, gotop, and cmatrix
+<img align="middle" src="images/basic.png" height="720px"/>
+
+Coding example
+<img align="middle" src="images/code.png" height="720px"/>
+
+Spotify and cava
+<img align="middle" src="images/music.png" height="720px"/>
+
+Stress testing cpu
+<img align="middle" src="images/stress.png" height="720px"/>
+
+<!-- EXPLANATIONS START -->
+
+<!-- for those in the repo -->
+---
 # Current dots
-
 ## i3(gaps)
 ### Notes
 i3 was introduced to me by my friend who recommended it because of the large user base, 
@@ -59,7 +86,7 @@ yay -S polybar
 Again, I saw some pretty screenshots on r/unixporn. termite aims to be used within a WM
 with tiling support and has similar keybindings to Vim, so that fits me perfectly.
 
-I still haven't learned most of termite, but there is a lot for me to learn.
+I still don't understand most of termite, so there is a lot for me to learn.
 ### Installation
 ```
 pacman -S termite
@@ -90,7 +117,7 @@ Assuming zsh is installed correctly,
 chsh -s /bin/zsh
 ```
 
-## Powerline
+## powerline
 ### Notes
 I use powerline for the shell prompt and to make vim look better.
 ### Installation
@@ -100,7 +127,7 @@ pacman -S powerline-fonts
 ```
 Currently mostly default settings. Check the Arch Wiki.
 
-## Rofi
+## rofi
 ### Notes
 rofi is a good alternative to the i3's default dmenu. Provides more customization options.
 ### Installation
@@ -108,8 +135,6 @@ rofi is a good alternative to the i3's default dmenu. Provides more customizatio
 pacman -S rofi
 ```
 
-
-# Other Programs
 ## wpgtk
 ### Notes
 Changed from `pywal` because pywal no longer supports oomox.
@@ -139,11 +164,15 @@ Reload in i3 in its config
 ```
 exec_always --no-startup-id wal -R
 ```
-Use xfce4-appearance-settings to reload Chromium's theme. Click off of FlatColor and reselect FlatColor.
+Use xfce4-appearance-settings to reload the GTK+ theme. Click off of FlatColor and reselect FlatColor.
 
+<!-- not in repo -->
+---
+# Other Programs
 ## betterlockscreen
 ### Notes
-I found this in r/unixporn's top of all time list [here](https://old.reddit.com/r/unixporn/comments/7iddwn/i3lock_faster_and_better_lockscreen/).
+I found this in r/unixporn's top of all time list 
+[here](https://old.reddit.com/r/unixporn/comments/7iddwn/i3lock_faster_and_better_lockscreen/).
 In my opinion, it looks much better than i3lock's default settings and I don't really care to 
 customize the lock screen that much so I took somebody else's.
 ### Installation
@@ -182,10 +211,12 @@ Activate with i3 in its config
 exec_always --no-startup-id compton -f -cC
 ```
 
-## Fonts used
-I have noto-fonts, ttf-dejavu, adobe-source-code-pro-fonts, ttf-ms-fonts, and ttf-font-awesome installed.
-Roboto is my main system font, Source Code Pro is my main monospace font.
+<!-- OTHER STUFF -->
+---
 
+# Fonts used
+I have noto-fonts, ttf-dejavu, adobe-source-code-pro-fonts, ttf-ms-fonts, ttf-font-awesome, and Nerd Fonts installed.
+Roboto is my main system font, Source Code Pro is my main monospace font.
 
 # Managing dotfiles
 I used [Brandon Invergo's guide](http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html)
@@ -202,28 +233,11 @@ Go to your main dotfiles directory. Execute `stow` followed by the folder name t
 an application's configuration files. For example, `stow i3`.
 
 # Wallpapers
-I use [Wallhaven](https://alpha.wallhaven.cc/) for my non-anime wallpapers.
+I use [Wallhaven](https://alpha.wallhaven.cc/) for my non-anime wallpapers. Otherwise, they're from 
+DeviantArt or Reddit. I have modified some of the wallpapers. All original works belong to their 
+respective owners.
 
 # Other
-Currently v2 of my rice. My first used KDE Plasma and i3 as the WM.
-
-# List of installed packages for reference
-- xfce
-- chromium
-- i3gaps
-- termite
-- rofi
-- noto-fonts, ttf-dejavu, adobe-source-code-pro-fonts
-- zsh
-- polybar
-- ttf-font-awesome
-- compton
-- pywal
-- betterlockscreen
-- cmatrix
-- htop
-- ttf-ms-fonts
-- yay (replacing pacaur)
-- aether (lightdm theme)
-
+Currently on the second iteration of ricing. My first used KDE Plasma and i3 as the WM.
+---
 Don't forget to `pacman -Syu` and `yay`!

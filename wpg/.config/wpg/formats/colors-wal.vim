@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/deditionis/.config/wpg/wallpapers/alice.jpg"
+let background = "#09152D"
+let foreground = "#ffffe9"
+let cursor     = "#ffffe9"
+
+" Colors
+let color0  = "#09152D"
+let color1  = "#7586A2"
+let color2  = "#586395"
+let color3  = "#E7CD6D"
+let color4  = "#2E59A7"
+let color5  = "#A4A095"
+let color6  = "#3A65B3"
+let color7  = "#efe8ca"
+let color8  = "#102857"
+let color9  = "#86a9e4"
+let color10 = "#6376d1"
+let color11 = "#ffff77"
+let color12 = "#2d6fe7"
+let color13 = "#e9d9ad"
+let color14 = "#3b7ef8"
+let color15 = "#ffffe9"

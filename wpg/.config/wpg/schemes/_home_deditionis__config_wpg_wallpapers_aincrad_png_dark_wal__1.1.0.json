@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/deditionis/.config/wpg/wallpapers/aincrad.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#111519",
+        "foreground": "#f9fdff",
+        "cursor": "#f9fdff"
+    },
+    "colors": {
+        "color0": "#111519",
+        "color1": "#94423C",
+        "color2": "#5D626B",
+        "color3": "#87403C",
+        "color4": "#464E59",
+        "color5": "#737B84",
+        "color6": "#7B838C",
+        "color7": "#c1c4c9",
+        "color8": "#252d37",
+        "color9": "#cd4a40",
+        "color10": "#6b7b98",
+        "color11": "#bc4741",
+        "color12": "#50637d",
+        "color13": "#859ebb",
+        "color14": "#8ea9c7",
+        "color15": "#f9fdff"
+    }
+}

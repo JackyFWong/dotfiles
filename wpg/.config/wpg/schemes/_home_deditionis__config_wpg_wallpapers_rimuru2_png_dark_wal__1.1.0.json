@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/deditionis/.config/wpg/wallpapers/rimuru2.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#222121",
+        "foreground": "#fffeef",
+        "cursor": "#fffeef"
+    },
+    "colors": {
+        "color0": "#222121",
+        "color1": "#dce7e9",
+        "color2": "#BADFEC",
+        "color3": "#C7AF9F",
+        "color4": "#6EA9CB",
+        "color5": "#B4DAE9",
+        "color6": "#599CC5",
+        "color7": "#FAEBDD",
+        "color8": "#3b3939",
+        "color9": "#deffff",
+        "color10": "#c7ffff",
+        "color11": "#ffdeb7",
+        "color12": "#7ae1ff",
+        "color13": "#c4ffff",
+        "color14": "#61cfff",
+        "color15": "#fffeef"
+    }
+}

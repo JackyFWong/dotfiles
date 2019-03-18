@@ -1,0 +1,21 @@
+set $wallpaper /home/deditionis/.config/wpg/wallpapers/alice.jpg
+
+set $background #09152D
+set $foreground #ffffe9
+
+set $color0 #09152D
+set $color1 #7586A2
+set $color2 #586395
+set $color3 #E7CD6D
+set $color4 #2E59A7
+set $color5 #A4A095
+set $color6 #3A65B3
+set $color7 #efe8ca
+set $color8 #102857
+set $color9 #86a9e4
+set $color10 #6376d1
+set $color11 #ffff77
+set $color12 #2d6fe7
+set $color13 #e9d9ad
+set $color14 #3b7ef8
+set $color15 #ffffe9

@@ -1,0 +1,24 @@
+wallpaper: "/home/deditionis/.config/wpg/wallpapers/alice.jpg"
+
+special:
+    background: "#09152D"
+    foreground: "#ffffe9"
+    cursor: "#ffffe9"
+
+colors:
+    color0: "#09152D"
+    color1: "#7586A2"
+    color2: "#586395"
+    color3: "#E7CD6D"
+    color4: "#2E59A7"
+    color5: "#A4A095"
+    color6: "#3A65B3"
+    color7: "#efe8ca"
+    color8: "#102857"
+    color9: "#86a9e4"
+    color10: "#6376d1"
+    color11: "#ffff77"
+    color12: "#2d6fe7"
+    color13: "#e9d9ad"
+    color14: "#3b7ef8"
+    color15: "#ffffe9"

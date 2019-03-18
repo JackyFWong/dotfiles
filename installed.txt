@@ -1,0 +1,19 @@
+xfce
+chromium
+i3gaps
+termite, rofi
+noto-fonts, ttf-dejavu, adobe-source-code-pro-fonts
+zsh
+polybar
+ttf-font-awesome
+compton
+wpgtk (pywal)
+betterlockscreen
+cmatrix
+htop
+ttf-ms-fonts
+yay (replacing pacaur)
+aether
+gimp
+nerd-fonts
+cava

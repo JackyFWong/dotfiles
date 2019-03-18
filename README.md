@@ -7,34 +7,34 @@ Running on a ThinkPad X1 Carbon (gen. 5).
 
 # Previews
 ### Display Manager - `lightdm` with [`aether`](https://github.com/NoiSek/Aether) theme
-<img align="middle" src="images/greeter.png" width="1280" height="720"/>
+<img align="middle" src="images/greeter.png" width="848" height="480"/>
 
 ### [Lock screen](https://github.com/JackyFWong/dotfiles#betterlockscreen) - betterlockscreen
-<img align="middle" src="images/lock.png" width="1280" height="720"/>
+<img align="middle" src="images/lock.png" width="848" height="480"/>
 
 ### [neofetch](https://github.com/JackyFWong/dotfiles#neofetch)
-<img align="middle" src="images/neofetch.png" width="1280" height="720"/>
+<img align="middle" src="images/neofetch.png" width="848" height="480"/>
 
 ### [rofi](https://github.com/JackyFWong/dotfiles#rofi)
-<img align="middle" src="images/rofi.png" width="1280" height="720"/>
+<img align="middle" src="images/rofi.png" width="848" height="480"/>
 
 ### r/unixporn and [i3](https://github.com/JackyFWong/dotfiles#i3gaps) config
-<img align="middle" src="images/unixporn.png" width="1280" height="720"/>
+<img align="middle" src="images/unixporn.png" width="848" height="480"/>
 
 ### YouTube, gotop, and cmatrix
-<img align="middle" src="images/basic.png" width="1280" height="720"/>
+<img align="middle" src="images/basic.png" width="848" height="480"/>
 
 ### Coding example
-<img align="middle" src="images/code.png" width="1280" height="720"/>
+<img align="middle" src="images/code.png" width="848" height="480"/>
 
 ### [wpgtk](https://github.com/JackyFWong/dotfiles#wpgtk) (colors submenu)
-<img align="middle" src="images/wpgtk.png" width="1280" height="720"/>
+<img align="middle" src="images/wpgtk.png" width="848" height="480"/>
 
 ### Spotify and cava
-<img align="middle" src="images/music.png" width="1280" height="720"/>
+<img align="middle" src="images/music.png" width="848" height="480"/>
 
 ### Stress testing cpu
-<img align="middle" src="images/stress.png" width="1280" height="720"/>
+<img align="middle" src="images/stress.png" width="848" height="480"/>
 
 <!-- EXPLANATIONS START -->
 

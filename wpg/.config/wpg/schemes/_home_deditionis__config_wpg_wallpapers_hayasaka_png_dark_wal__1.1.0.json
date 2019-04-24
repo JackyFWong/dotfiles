@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/deditionis/.config/wpg/wallpapers/hayasaka.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#1e1b1e",
+        "foreground": "#fffcf5",
+        "cursor": "#fffcf5"
+    },
+    "colors": {
+        "color0": "#1e1b1e",
+        "color1": "#D5BF84",
+        "color2": "#E7DDD6",
+        "color3": "#E5D1AF",
+        "color4": "#ABB8CB",
+        "color5": "#C4BBBD",
+        "color6": "#D8C289",
+        "color7": "#f1e6df",
+        "color8": "#383238",
+        "color9": "#ffff95",
+        "color10": "#fff8db",
+        "color11": "#ffffc3",
+        "color12": "#c6eaff",
+        "color13": "#ffdae7",
+        "color14": "#ffff9b",
+        "color15": "#fffcf5"
+    }
+}

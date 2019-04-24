@@ -56,8 +56,12 @@ to ensure that I could use i3 and Xfce services together somewhat smoothly.
 There was a bug with the xfce4-panel and using the Windows button as `$mod`. I figured it out
 [here](https://forum.antergos.com/topic/10809/no-running-instance-of-xfce4-panel-was-found/3).
 
-To set the PrtSc button on your keyboard, head to the `xfce4-settings-manager` > Keyboard > 
-Application Shortcuts and add `xfce4-screenshooter` as a command.
+#### Keyboard rebindings
+- PrtSc -> `xfce4-settings-manager` > Keyboard > Application Shortcuts > add 
+`xfce4-screenshooter` as a command
+- Microphone toggle -> 'xfce4-settings-manager' > Keyboard > Application Shortcuts > add 
+`amixer set Capture toggle` as a command
+
 ### Installation
 ```
 pacman -S i3-gaps

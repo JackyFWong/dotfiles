@@ -17,10 +17,11 @@ autoload -Uz promptinit
 promptinit
 #prompt adam2
 
-alias sshj='ssh jackyw@babbage8.computing.clemson.edu'
+alias sshj='ssh -t jackyw@babbage8.computing.clemson.edu'
 alias ls='ls --color=auto'
-alias ll='ls -al'
 alias la='ls -a'
+alias ll='ls -l'
+alias lla='ls -al'
 
 # Pywal
 # Import colorscheme from 'wal' asynchronously

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/deditionis/.config/wpg/wallpapers/wallhaven-757426.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0c1924",
+        "foreground": "#e77d4e",
+        "cursor": "#e77d4e"
+    },
+    "colors": {
+        "color0": "#0c1924",
+        "color1": "#be3422",
+        "color2": "#2a3940",
+        "color3": "#d0a99a",
+        "color4": "#324448",
+        "color5": "#8c282b",
+        "color6": "#a83922",
+        "color7": "#904d30",
+        "color8": "#17344a",
+        "color9": "#ea341b",
+        "color10": "#304b59",
+        "color11": "#e1c3a8",
+        "color12": "#365c66",
+        "color13": "#c3272b",
+        "color14": "#e7411d",
+        "color15": "#e77d4e"
+    }
+}

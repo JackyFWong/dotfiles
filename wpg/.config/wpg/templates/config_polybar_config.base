@@ -153,7 +153,7 @@ bar-volume-empty-font = 2
 type = internal/battery
 battery = BAT0
 adapter = AC
-full-at = 98
+full-at = 95
 
 format-charging-foreground = ${{colors.mod-frg}}
 format-charging-background = ${{colors.mod-bkg}}

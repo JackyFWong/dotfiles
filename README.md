@@ -6,6 +6,8 @@ I use i3 on Antergos with Xfce4 services installed prior. System is not bug free
 Running on a ThinkPad X1 Carbon (gen. 5).
 
 # Previews
+<img align="middle" src="images/starterpack.png" width="848" height="480"/>
+
 ### Display Manager - `lightdm` with [`aether`](https://github.com/NoiSek/Aether) theme
 <img align="middle" src="images/greeter.png" width="848" height="480"/>
 
@@ -32,9 +34,6 @@ Running on a ThinkPad X1 Carbon (gen. 5).
 
 ### Spotify and cava
 <img align="middle" src="images/music.png" width="848" height="480"/>
-
-### Stress testing cpu
-<img align="middle" src="images/stress.png" width="848" height="480"/>
 
 <!-- EXPLANATIONS START -->
 
@@ -165,7 +164,7 @@ wpg
 
 Reload in i3 in its config
 ```
-exec_always --no-startup-id wal -R
+exec --no-startup-id $HOME/.config/wpg/wp_init.sh
 ```
 Use xfce4-appearance-settings to reload the GTK+ theme. 
 Click off of FlatColor and reselect FlatColor.

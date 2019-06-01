@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/deditionis/.config/wpg/wallpapers/mountains.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0f0f1b",
+        "foreground": "#f3f3e5",
+        "cursor": "#f3f3e5"
+    },
+    "colors": {
+        "color0": "#0f0f1b",
+        "color1": "#a38141",
+        "color2": "#79675e",
+        "color3": "#a08363",
+        "color4": "#5a4f56",
+        "color5": "#827773",
+        "color6": "#675c5a",
+        "color7": "#e5d6b2",
+        "color8": "#20203b",
+        "color9": "#d9a443",
+        "color10": "#a57d67",
+        "color11": "#d9a56c",
+        "color12": "#79576b",
+        "color13": "#b28c80",
+        "color14": "#8b6763",
+        "color15": "#f3f3e5"
+    }
+}

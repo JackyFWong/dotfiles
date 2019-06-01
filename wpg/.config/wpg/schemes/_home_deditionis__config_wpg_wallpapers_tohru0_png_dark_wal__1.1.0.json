@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/deditionis/.config/wpg/wallpapers/tohru0.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#1a1619",
+        "foreground": "#fff9d9",
+        "cursor": "#fff9d9"
+    },
+    "colors": {
+        "color0": "#1a1619",
+        "color1": "#CB4147",
+        "color2": "#85716C",
+        "color3": "#D3704E",
+        "color4": "#A38274",
+        "color5": "#A2605D",
+        "color6": "#96837F",
+        "color7": "#e6c4ab",
+        "color8": "#352c33",
+        "color9": "#ff434c",
+        "color10": "#bc897c",
+        "color11": "#ff8852",
+        "color12": "#e5a184",
+        "color13": "#e36d68",
+        "color14": "#d49e93",
+        "color15": "#fff9d9"
+    }
+}

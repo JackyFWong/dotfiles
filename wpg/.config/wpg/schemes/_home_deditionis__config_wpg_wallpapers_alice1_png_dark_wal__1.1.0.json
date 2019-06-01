@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/deditionis/.config/wpg/wallpapers/alice1.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#141317",
+        "foreground": "#e1e1e1",
+        "cursor": "#e1e1e1"
+    },
+    "colors": {
+        "color0": "#141317",
+        "color1": "#1e3e94",
+        "color2": "#767c87",
+        "color3": "#dcc35a",
+        "color4": "#dbd094",
+        "color5": "#b4a392",
+        "color6": "#dddd65",
+        "color7": "#dcdbd0",
+        "color8": "#2c2731",
+        "color9": "#1c4bd2",
+        "color10": "#8a9fc7",
+        "color11": "#dfdf60",
+        "color12": "#dddda1",
+        "color13": "#ddd3a8",
+        "color14": "#dddd6d",
+        "color15": "#e1e1e1"
+    }
+}

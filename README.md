@@ -5,35 +5,57 @@ They usually start with a period, hence the name. I've included some notes for w
 I use i3 on Antergos with Xfce4 services installed prior. System is not bug free.
 Running on a ThinkPad X1 Carbon (gen. 5).
 
+Todo: Fix Firefox's implementation of GTK. Upload new screenshots.
+
 # Previews
-<img align="middle" src="images/starterpack.png" width="848" height="480"/>
+<p align="center">
+    <img align="middle" src="images/starterpack.png" width="848" height="480"/>
+</p>
 
 ### Display Manager - `lightdm` with [`aether`](https://github.com/NoiSek/Aether) theme
-<img align="middle" src="images/greeter.png" width="848" height="480"/>
+<p align="center">
+    <img align="middle" src="images/greeter.png" width="848" height="480"/>
+</p>
 
 ### [Lock screen](https://github.com/JackyFWong/dotfiles#betterlockscreen) - betterlockscreen
-<img align="middle" src="images/lock.png" width="848" height="480"/>
+<p align="center">
+    <img align="middle" src="images/lock.png" width="848" height="480"/>
+</p>
 
 ### [neofetch](https://github.com/JackyFWong/dotfiles#neofetch)
-<img align="middle" src="images/neofetch.png" width="848" height="480"/>
+<p align="center">
+    <img align="middle" src="images/neofetch.png" width="848" height="480"/>
+</p>
 
 ### [rofi](https://github.com/JackyFWong/dotfiles#rofi)
-<img align="middle" src="images/rofi.png" width="848" height="480"/>
+<p align="center">
+    <img align="middle" src="images/rofi.png" width="848" height="480"/>
+</p>
 
 ### r/unixporn and [i3](https://github.com/JackyFWong/dotfiles#i3gaps) config
-<img align="middle" src="images/unixporn.png" width="848" height="480"/>
+<p align="center">
+    <img align="middle" src="images/unixporn.png" width="848" height="480"/>
+</p>
 
 ### YouTube, gotop, and cmatrix
-<img align="middle" src="images/basic.png" width="848" height="480"/>
+<p align="center">
+    <img align="middle" src="images/basic.png" width="848" height="480"/>
+</p>
 
 ### Coding example
-<img align="middle" src="images/code.png" width="848" height="480"/>
+<p align="center">
+    <img align="middle" src="images/code.png" width="848" height="480"/>
+</p>
 
 ### [wpgtk](https://github.com/JackyFWong/dotfiles#wpgtk) (colors submenu)
-<img align="middle" src="images/wpgtk.png" width="848" height="480"/>
+<p align="center">
+    <img align="middle" src="images/wpgtk.png" width="848" height="480"/>
+</p>
 
 ### Spotify and cava
-<img align="middle" src="images/music.png" width="848" height="480"/>
+<p align="center">
+    <img align="middle" src="images/music.png" width="848" height="480"/>
+</p>
 
 <!-- EXPLANATIONS START -->
 
@@ -166,7 +188,7 @@ Reload in i3 in its config
 ```
 exec --no-startup-id $HOME/.config/wpg/wp_init.sh
 ```
-Use xfce4-appearance-settings to reload the GTK+ theme. 
+Use xfce4-appearance-settings to reload the GTK+ theme for existing applications.
 Click off of FlatColor and reselect FlatColor.
 
 The wallpapers are symlinked to images in my `~/Pictures/Wallpapers/` directory.
@@ -194,13 +216,13 @@ bindsym $mod+Shift+x exec betterlockscreen -l dimblur
 ```
 The optional `dimblur` argument asks betterlockscreen to dim and blur the lock screen image.
 
-## Chromium
+## Firefox
 ### Notes
-It's Chromium. I use a lot of Google services so it fits right in. It also works with GTK themes 
-(and thus `wpgtk`)!
+I switched to Firefox after being fed up with Google and how they are removing the effectiveness 
+of ad blockers in Chrome/Chromium. Works ok with GTK and wpgtk.
 ### Installation
 ```
-pacman -S chromium
+pacman -S firefox
 ```
 
 ## compton

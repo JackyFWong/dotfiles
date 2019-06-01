@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/deditionis/.config/wpg/wallpapers/sinon2.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0d0a12",
+        "foreground": "#deded9",
+        "cursor": "#deded9"
+    },
+    "colors": {
+        "color0": "#0d0a12",
+        "color1": "#a48e99",
+        "color2": "#b49c9c",
+        "color3": "#c5b59a",
+        "color4": "#c6b7af",
+        "color5": "#8e7e92",
+        "color6": "#ac9eb3",
+        "color7": "#dad0c5",
+        "color8": "#231d32",
+        "color9": "#dda7c6",
+        "color10": "#dcb9b9",
+        "color11": "#ddddb2",
+        "color12": "#dcdcc1",
+        "color13": "#c996d8",
+        "color14": "#dcbbdc",
+        "color15": "#deded9"
+    }
+}

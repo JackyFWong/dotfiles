@@ -5,13 +5,13 @@
 ;==========================================================
 
 [colors]
-bar-bkg = #1d1d20
-bar-frg = #bedbf5
-mod-bkg = #34343a
-mod-frg = #739ee3
-primary = #a66684
-secondary = #69637d
-alert = #85cdff
+bar-bkg = #1d171c
+bar-frg = #c8dadc
+mod-bkg = #392d36
+mod-frg = #ffc07c
+primary = #A79898
+secondary = #D4AD99
+alert = #7db8ce
 
 [module/xwindow]
 type = internal/xwindow
@@ -242,7 +242,7 @@ menu-2-1-exec = menu-open-0
 
 [module/decor-glyph]
 type = custom/text
-content-background = #d91d1d20
+content-background = #d91d171c
 content-foreground = ${colors.mod-bkg}
 
 [module/left-start]
@@ -286,7 +286,7 @@ offset-y = 0
 override-redirect = true
 wm-restack = i3
 
-background = #d91d1d20
+background = #d91d171c
 foreground = ${colors.bar-frg}
 
 line-size = 0
@@ -302,7 +302,7 @@ font-0 = "Roboto:pixelsize=11;3"
 font-1 = unicode:fontformat=truetype:size=8:antialias=false;0
 font-2 = "SauceCodePro Nerd Font:pixelsize=9;3"
 font-3 = "SauceCodePro Nerd Font:size=15;4"
-font-4 = "Wuncon Siji:pixelsize=10;3"
+font-4 = "Siji:pixelsize=10;3"
 font-5 = "Noto Sans Symbols2:pixelsize=10;3"
 
 modules-left = rofi i3 left-end

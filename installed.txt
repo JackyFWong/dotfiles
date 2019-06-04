@@ -18,3 +18,5 @@ aether
 gimp
 nerd-fonts
 cava
+firefox (replacing chromium)
+spicetify-cli

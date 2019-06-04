@@ -216,14 +216,47 @@ bindsym $mod+Shift+x exec betterlockscreen -l dimblur
 ```
 The optional `dimblur` argument asks betterlockscreen to dim and blur the lock screen image.
 
+## [spicetify-cli](https://github.com/khanhas/spicetify-cli/)
+### Notes
+
+### Installation
+```
+yay -S spicetify-cli
+```
+To complete the setup, grant write permissions to Spotify's executable
+```
+sudo chmod 777 /opt/spotify -R
+```
+and then you have to generate the config file
+```
+spicetify
+```
+then change the `config.ini` file's `spotify_path` variable to `/opt/spotify`. Then run
+```
+spicetify backup apply enable-devtool
+```
+### Configuratoin
+Each theme must have a `color.ini` and `user.css` file in the theme's own named folder.
+
+Edit the `config.ini` file to the appropriate theme (folder) name then
+```
+spicetify update
+```
+You can use `Ctrl``Shift``R` inside Spotify to restart the theme.
+
 ## Firefox
 ### Notes
 I switched to Firefox after being fed up with Google and how they are removing the effectiveness 
-of ad blockers in Chrome/Chromium. Works ok with GTK and wpgtk.
+of ad blockers in Chrome/Chromium.
 ### Installation
 ```
 pacman -S firefox
 ```
+In order to keep a dark `wpgtk` theme and have readable text input boxes, 
+1. Open `about:config`
+2. Create new String value `widget.content.gtk-theme-override`
+3. Set the value to a light GTK theme, I used `Adwaita`
+4. Restart Firefox to apply
 
 ## compton
 ### Notes

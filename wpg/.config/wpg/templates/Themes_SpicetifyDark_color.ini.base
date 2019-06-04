@@ -1,0 +1,18 @@
+[Base]
+; Light green on Dark Blue background
+main_fg                               = {color11.strip}
+secondary_fg                          = DEDEDE
+main_bg                               = {color0.strip}
+sidebar_and_player_bg                 = {color0.strip}
+cover_overlay_and_shadow              = 000000
+indicator_fg_and_button_bg            = {color11.strip}
+pressing_fg                           = FF5C86
+slider_bg                             = 3F3C45
+sidebar_indicator_and_hover_button_bg = {color12.strip}
+scrollbar_fg_and_selected_row_bg      = {color14.strip}
+pressing_button_fg                    = DEDEDE
+pressing_button_bg                    = 383145
+selected_button                       = {color12.strip}
+miscellaneous_bg                      = 3F3C45
+miscellaneous_hover_bg                = 383145
+preserve_1                            = FFFFFF

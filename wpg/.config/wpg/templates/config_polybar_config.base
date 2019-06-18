@@ -29,7 +29,7 @@ label-mode-foreground = #000
 label-mode-background = ${{colors.primary}}
 
 label-focused = %index%
-label-focused-background = ${{colors.mod-bkg}}
+label-focused-background = ${{colors.bar-bkg}}
 label-focused-foreground = ${{colors.mod-frg}}
 label-focused-underline = ${{colors.primary}}
 label-focused-padding = 2
@@ -309,6 +309,6 @@ modules-left = rofi i3 left-end
 modules-center = xwindow
 modules-right = right-start pulseaudio right-end right-start cpu memory temperature right-end right-start wlan eth battery date powermenu
 
-tray-position = none
+tray-position = right
 
 cursor-click = pointer

@@ -1,9 +1,9 @@
 * {
-    active-background: #D4AD99;
+    active-background: #517692;
     active-foreground: @foreground;
     normal-background: @background;
     normal-foreground: @foreground;
-    urgent-background: #A79898;
+    urgent-background: #2B8DB7;
     urgent-foreground: @foreground;
 
     alternate-active-background: @background;
@@ -13,16 +13,16 @@
     alternate-urgent-background: @background;
     alternate-urgent-foreground: @foreground;
 
-    selected-active-background: #A79898;
+    selected-active-background: #2B8DB7;
     selected-active-foreground: @foreground;
-    selected-normal-background: #D4AD99;
+    selected-normal-background: #517692;
     selected-normal-foreground: @foreground;
-    selected-urgent-background: #C2956F;
+    selected-urgent-background: #5AADC8;
     selected-urgent-foreground: @foreground;
 
     background-color: @background;
-    background: #f2ffff;
-    foreground: #1d171c;
+    background: #deffff;
+    foreground: #0C1117;
     border-color: @background;
     spacing: 2;
 }

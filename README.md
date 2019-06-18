@@ -5,7 +5,7 @@ They usually start with a period, hence the name. I've included some notes for w
 I use i3 on Antergos with Xfce4 services installed prior. System is not bug free.
 Running on a ThinkPad X1 Carbon (gen. 5).
 
-Todo: Fix Firefox's implementation of GTK. Upload new screenshots.
+Todo: Upload new screenshots. Add Antergos memorial.
 
 # Previews
 <p align="center">
@@ -193,31 +193,28 @@ Click off of FlatColor and reselect FlatColor.
 
 The wallpapers are symlinked to images in my `~/Pictures/Wallpapers/` directory.
 
-<!-- not in repo -->
-# Other Programs
-## [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen)
+## [compton (tryone144 fork)](https://github.com/tryone144/compton)
 ### Notes
-I found this in r/unixporn's top of all time list 
-[here](https://old.reddit.com/r/unixporn/comments/7iddwn/i3lock_faster_and_better_lockscreen/).
-In my opinion, it looks much better than i3lock's default settings and I don't really care to 
-customize the lock screen that much so I took somebody else's.
+A compositor for X. This fork adds the useful kawase blur method. I use it for transparency, 
+screen transitions, window shadows, and now blur.
+
 ### Installation
 ```
-yay -S betterlockscreen
+yay -S compton-tryone-git
 ```
-### Configuration
-Set an image as the lock screen
+Activate with i3 in its config
 ```
-betterlockscreen -u "/path/to/image.jpg"
+exec_always --no-startup-id compton
 ```
-Set to lock screen with i3 keyboard shortcut in its config
+You can restart compton via 
 ```
-bindsym $mod+Shift+x exec betterlockscreen -l dimblur
+pkill compton
+compton
 ```
-The optional `dimblur` argument asks betterlockscreen to dim and blur the lock screen image.
 
 ## [spicetify-cli](https://github.com/khanhas/spicetify-cli/)
 ### Notes
+This is a theming tool for Spotify. It works well with `wpgtk`.
 
 ### Installation
 ```
@@ -242,12 +239,39 @@ Edit the `config.ini` file to the appropriate theme (folder) name then
 ```
 spicetify update
 ```
-You can use `Ctrl``Shift``R` inside Spotify to restart the theme.
+You can use `Ctrl` `Shift` `R` inside Spotify to restart the theme.
+
+<!-- not in repo -->
+# Other Programs
+## [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen)
+### Notes
+I found this in r/unixporn's top of all time list 
+[here](https://old.reddit.com/r/unixporn/comments/7iddwn/i3lock_faster_and_better_lockscreen/).
+In my opinion, it looks much better than i3lock's default settings and I don't really care to 
+customize the lock screen that much so I took somebody else's.
+### Installation
+```
+yay -S betterlockscreen
+```
+### Configuration
+Set an image as the lock screen
+```
+betterlockscreen -u "/path/to/image.jpg"
+```
+Set to lock screen with i3 keyboard shortcut in its config
+```
+bindsym $mod+Shift+x exec betterlockscreen -l dimblur
+```
+The optional `dimblur` argument asks betterlockscreen to dim and blur the lock screen image.
 
 ## Firefox
 ### Notes
 I switched to Firefox after being fed up with Google and how they are removing the effectiveness 
 of ad blockers in Chrome/Chromium.
+
+There's a lot of customization you have to do in order to somewhat mirror Chromium's behavior. 
+Mess around in Preferences and `about:config` until the desired results. Kinetic scrolling does 
+not work.
 ### Installation
 ```
 pacman -S firefox
@@ -257,19 +281,6 @@ In order to keep a dark `wpgtk` theme and have readable text input boxes,
 2. Create new String value `widget.content.gtk-theme-override`
 3. Set the value to a light GTK theme, I used `Adwaita`
 4. Restart Firefox to apply
-
-## compton
-### Notes
-I'm not too sure what compton is. I just followed some directions to make i3 look pretty.
-Right now, compton allows for shadow effects and fade transitions.
-### Installation
-```
-pacman -S compton
-```
-Activate with i3 in its config
-```
-exec_always --no-startup-id compton -f -cC
-```
 
 <!-- OTHER STUFF -->
 
@@ -294,10 +305,10 @@ Go to your main dotfiles directory. Execute `stow` followed by the folder name t
 an application's configuration files. For example, `stow i3`.
 
 # Wallpapers
-I use [Wallhaven](https://alpha.wallhaven.cc/) for my non-anime wallpapers. Otherwise, they're from 
-DeviantArt or Reddit. I have modified some of the wallpapers. All original works belong to their 
+I use [Wallhaven](https://wallhaven.cc/) for my non-anime wallpapers. Otherwise, they're from 
+DeviantArt, Pixiv, or Reddit. I have modified some of the wallpapers. All original works belong to their 
 respective owners, so please don't go sharing my modified versions. When choosing wallpapers, 
-choose those that have good contrast for daily visibility.
+choose those that have good contrast for coding visibility.
 
 # Other
 Currently on the second iteration of ricing. My first used KDE Plasma and i3 as the WM.

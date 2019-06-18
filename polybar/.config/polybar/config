@@ -5,13 +5,13 @@
 ;==========================================================
 
 [colors]
-bar-bkg = #1d171c
-bar-frg = #c8dadc
-mod-bkg = #392d36
-mod-frg = #ffc07c
-primary = #A79898
-secondary = #D4AD99
-alert = #7db8ce
+bar-bkg = #0C1117
+bar-frg = #add9e0
+mod-bkg = #1c2938
+mod-frg = #62eaff
+primary = #2B8DB7
+secondary = #517692
+alert = #29e0ff
 
 [module/xwindow]
 type = internal/xwindow
@@ -29,7 +29,7 @@ label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
 label-focused = %index%
-label-focused-background = ${colors.mod-bkg}
+label-focused-background = ${colors.bar-bkg}
 label-focused-foreground = ${colors.mod-frg}
 label-focused-underline = ${colors.primary}
 label-focused-padding = 2
@@ -242,7 +242,7 @@ menu-2-1-exec = menu-open-0
 
 [module/decor-glyph]
 type = custom/text
-content-background = #d91d171c
+content-background = #d90C1117
 content-foreground = ${colors.mod-bkg}
 
 [module/left-start]
@@ -286,7 +286,7 @@ offset-y = 0
 override-redirect = true
 wm-restack = i3
 
-background = #d91d171c
+background = #d90C1117
 foreground = ${colors.bar-frg}
 
 line-size = 0
@@ -309,6 +309,6 @@ modules-left = rofi i3 left-end
 modules-center = xwindow
 modules-right = right-start pulseaudio right-end right-start cpu memory temperature right-end right-start wlan eth battery date powermenu
 
-tray-position = none
+tray-position = right
 
 cursor-click = pointer

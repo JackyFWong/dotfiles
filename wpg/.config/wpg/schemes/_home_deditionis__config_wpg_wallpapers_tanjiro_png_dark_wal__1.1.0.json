@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/deditionis/.config/wpg/wallpapers/tanjiro.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#070F24",
+        "foreground": "#f8ffff",
+        "cursor": "#f8ffff"
+    },
+    "colors": {
+        "color0": "#070F24",
+        "color1": "#FEE6C2",
+        "color2": "#4AC38D",
+        "color3": "#E0AE99",
+        "color4": "#3EB6D9",
+        "color5": "#B0C9D5",
+        "color6": "#51EAFC",
+        "color7": "#dfe8eb",
+        "color8": "#0e204e",
+        "color9": "#ffffc3",
+        "color10": "#4effb9",
+        "color11": "#ffd8ae",
+        "color12": "#3ef6ff",
+        "color13": "#cbffff",
+        "color14": "#53ffff",
+        "color15": "#f8ffff"
+    }
+}

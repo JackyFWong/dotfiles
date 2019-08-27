@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/deditionis/.config/wpg/wallpapers/landscape.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0d0d30",
+        "foreground": "#ffeaef",
+        "cursor": "#ffeaef"
+    },
+    "colors": {
+        "color0": "#0d0d30",
+        "color1": "#A23684",
+        "color2": "#CD6E9A",
+        "color3": "#E091A8",
+        "color4": "#44A7D5",
+        "color5": "#B45593",
+        "color6": "#1EE5D9",
+        "color7": "#efcbd0",
+        "color8": "#171757",
+        "color9": "#e038b1",
+        "color10": "#ff7ac6",
+        "color11": "#ffa4d0",
+        "color12": "#46dfff",
+        "color13": "#fb5dc4",
+        "color14": "#16ffff",
+        "color15": "#ffeaef"
+    }
+}

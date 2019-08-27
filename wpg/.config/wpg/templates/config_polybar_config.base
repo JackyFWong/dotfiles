@@ -310,5 +310,6 @@ modules-center = xwindow
 modules-right = right-start pulseaudio right-end right-start cpu memory temperature right-end right-start wlan eth battery date powermenu
 
 tray-position = right
+tray-background = ${{colors.mod-bkg}}
 
 cursor-click = pointer

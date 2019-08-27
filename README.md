@@ -74,8 +74,10 @@ I rebound the movement keys to vim's `hjkl` instead of the default `jkl;`.
 I used [Alex's guide](http://flux242.blogspot.com/2015/10/using-i3-tiling-window-manager-with.html)
 to ensure that I could use i3 and Xfce services together somewhat smoothly. 
 
-There was a bug with the xfce4-panel and using the Windows button as `$mod`. I figured it out
-[here](https://forum.antergos.com/topic/10809/no-running-instance-of-xfce4-panel-was-found/3).
+There was a bug with the xfce4-panel and using the Windows button as `$mod`. Here's how to fix it.
+
+`xfce4-settings-manager` > Keyboard > Application Shortcuts > remove keybindings that called 
+`xfce4-popup-whiskermenu`
 
 #### Keyboard rebindings
 - PrtSc -> `xfce4-settings-manager` > Keyboard > Application Shortcuts > add 

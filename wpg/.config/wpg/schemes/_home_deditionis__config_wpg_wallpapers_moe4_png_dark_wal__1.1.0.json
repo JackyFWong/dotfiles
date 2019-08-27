@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/deditionis/.config/wpg/wallpapers/moe4.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0C192C",
+        "foreground": "#efffff",
+        "cursor": "#efffff"
+    },
+    "colors": {
+        "color0": "#0C192C",
+        "color1": "#CEB7A2",
+        "color2": "#9BB6D0",
+        "color3": "#E3D0AF",
+        "color4": "#6790A7",
+        "color5": "#9C9DA4",
+        "color6": "#69B6D1",
+        "color7": "#ccdbe7",
+        "color8": "#162f53",
+        "color9": "#ffecba",
+        "color10": "#b1edff",
+        "color11": "#ffffc4",
+        "color12": "#74c0ea",
+        "color13": "#b6bce9",
+        "color14": "#74f6ff",
+        "color15": "#efffff"
+    }
+}

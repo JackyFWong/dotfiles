@@ -146,6 +146,7 @@ for_window [class="Pavucontrol"] floating enable
 for_window [class="Kalu"] floating enable
 for_window [class="Nm-connection-editor"] floating enable
 for_window [class="Wpg"] floating enable
+for_window [class="Places"] floating enable
 
 #
 # MULTIMEDIA KEYS

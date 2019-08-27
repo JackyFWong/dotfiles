@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/deditionis/.config/wpg/wallpapers/zelda.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#372e28",
+        "foreground": "#f1ffff",
+        "cursor": "#f1ffff"
+    },
+    "colors": {
+        "color0": "#372e28",
+        "color1": "#D5D1BC",
+        "color2": "#A8BAC4",
+        "color3": "#CAB196",
+        "color4": "#96B7C6",
+        "color5": "#A6A8A8",
+        "color6": "#25B1D4",
+        "color7": "#cbdee2",
+        "color8": "#54463c",
+        "color9": "#ffffd5",
+        "color10": "#c2f8ff",
+        "color11": "#ffe6ac",
+        "color12": "#acf6ff",
+        "color13": "#c2f0f0",
+        "color14": "#1fefff",
+        "color15": "#f1ffff"
+    }
+}

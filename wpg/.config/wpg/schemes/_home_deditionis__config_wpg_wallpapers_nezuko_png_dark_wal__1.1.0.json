@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/deditionis/.config/wpg/wallpapers/nezuko.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#080B17",
+        "foreground": "#f2f7ff",
+        "cursor": "#f2f7ff"
+    },
+    "colors": {
+        "color0": "#080B17",
+        "color1": "#8E9BC2",
+        "color2": "#7689B9",
+        "color3": "#8A93B9",
+        "color4": "#5671AD",
+        "color5": "#B07188",
+        "color6": "#798FC2",
+        "color7": "#c5c9da",
+        "color8": "#141c3c",
+        "color9": "#a2beff",
+        "color10": "#85a9ff",
+        "color11": "#9eb2ff",
+        "color12": "#5e8cf1",
+        "color13": "#f780ab",
+        "color14": "#88b1ff",
+        "color15": "#f2f7ff"
+    }
+}

@@ -273,7 +273,8 @@ of ad blockers in Chrome/Chromium.
 
 There's a lot of customization you have to do in order to somewhat mirror Chromium's behavior. 
 Mess around in Preferences and `about:config` until the desired results. Kinetic scrolling does 
-not work.
+not work. The `firefox/prefs.js` is a backup of the `about:config` settings, which are found 
+locally at `~/.mozilla/firefox/[version].default/prefs.js`; it is not sym linked on my system.
 ### Installation
 ```
 pacman -S firefox

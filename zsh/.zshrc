@@ -17,7 +17,7 @@ autoload -Uz promptinit
 promptinit
 #prompt adam2
 
-alias sshj='ssh -t jackyw@babbage8.computing.clemson.edu'
+alias sshj='ssh jackyw@access.computing.clemson.edu'
 alias ls='ls --color=auto'
 alias la='ls -a'
 alias ll='ls -l'

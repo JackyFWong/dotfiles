@@ -5,13 +5,13 @@
 ;==========================================================
 
 [colors]
-bar-bkg = #0C192C
-bar-frg = #ccdbe7
-mod-bkg = #162f53
-mod-frg = #ffffc4
-primary = #CEB7A2
-secondary = #9BB6D0
-alert = #74f6ff
+bar-bkg = #0e131e
+bar-frg = #cec9d5
+mod-bkg = #1d2840
+mod-frg = #786998
+primary = #9d7f82
+secondary = #2f537b
+alert = #89b0ff
 
 [module/xwindow]
 type = internal/xwindow
@@ -242,7 +242,7 @@ menu-2-1-exec = menu-open-0
 
 [module/decor-glyph]
 type = custom/text
-content-background = #d90C192C
+content-background = #d90e131e
 content-foreground = ${colors.mod-bkg}
 
 [module/left-start]
@@ -286,7 +286,7 @@ offset-y = 0
 override-redirect = true
 wm-restack = i3
 
-background = #d90C192C
+background = #d90e131e
 foreground = ${colors.bar-frg}
 
 line-size = 0

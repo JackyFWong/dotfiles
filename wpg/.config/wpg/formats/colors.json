@@ -1,28 +1,28 @@
 {
-    "wallpaper": "/home/deditionis/.config/wpg/wallpapers/moe4.png",
+    "wallpaper": "/home/deditionis/.config/wpg/wallpapers/wallhaven-vgowxm.jpg",
     "alpha": "100",
 
     "special": {
-        "background": "#0C192C",
-        "foreground": "#efffff",
-        "cursor": "#efffff"
+        "background": "#0e131e",
+        "foreground": "#fffaff",
+        "cursor": "#fffaff"
     },
     "colors": {
-        "color0": "#0C192C",
-        "color1": "#CEB7A2",
-        "color2": "#9BB6D0",
-        "color3": "#E3D0AF",
-        "color4": "#6790A7",
-        "color5": "#9C9DA4",
-        "color6": "#69B6D1",
-        "color7": "#ccdbe7",
-        "color8": "#162f53",
-        "color9": "#ffecba",
-        "color10": "#b1edff",
-        "color11": "#ffffc4",
-        "color12": "#74c0ea",
-        "color13": "#b6bce9",
-        "color14": "#74f6ff",
-        "color15": "#efffff"
+        "color0": "#0e131e",
+        "color1": "#9d7f82",
+        "color2": "#2f537b",
+        "color3": "#625d6e",
+        "color4": "#386998",
+        "color5": "#6376a1",
+        "color6": "#7b90bd",
+        "color7": "#cec9d5",
+        "color8": "#1d2840",
+        "color9": "#da9096",
+        "color10": "#3068a6",
+        "color11": "#786998",
+        "color12": "#3985ce",
+        "color13": "#6d8fde",
+        "color14": "#89b0ff",
+        "color15": "#fffaff"
     }
 }

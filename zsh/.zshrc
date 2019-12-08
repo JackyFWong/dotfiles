@@ -47,3 +47,4 @@ POWERLINE_BASH_SELECT=1
 # Setting default text editor
 export VISUAL=vim
 export EDITOR="$VISUAL"
+export BROWSER="firefox"
